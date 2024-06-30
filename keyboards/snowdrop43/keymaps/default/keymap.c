@@ -27,7 +27,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [2] = LAYOUT(
         _______, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC,   KC_CIRC, KC_AMPR, KC_ASTR, KC_PEQL, KC_PPLS, _______,
         _______, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,      KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    _______,
-        _______, SWITCH,  SCROLL,  KC_BTN2, KC_BTN1, _______,   _______, _______, _______, _______, _______, _______,
+        _______, _______, SCROLL,  KC_BTN2, KC_BTN1, _______,   _______, _______, _______, _______, _______, _______,
                           _______, _______, _______, _______,   _______, _______, _______
 
     )
@@ -108,7 +108,7 @@ void pointing_device_init_kb(void) {
 }
 
 // Modify these values to adjust the scrolling speed
-#define SCROLL_DIVISOR_H -8.0
+#define SCROLL_DIVISOR_H 8.0
 #define SCROLL_DIVISOR_V -8.0
 
 // Variables to store accumulated scroll values
