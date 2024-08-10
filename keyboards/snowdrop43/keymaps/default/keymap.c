@@ -53,7 +53,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             break;
         case SCROLL:
             if (record->event.pressed) {
-                pimoroni_trackball_set_cpi(128 * 75);
+                pimoroni_trackball_set_cpi(128 * 100);
             } else {
                 pimoroni_trackball_set_cpi(128 * cpi_n);
             }
