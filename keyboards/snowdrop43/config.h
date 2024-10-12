@@ -3,28 +3,15 @@
 
 #pragma once
 
-/*
- * Feature disable options
- *  These options are also useful to firmware size reduction.
- */
-
-/* disable debug print */
-//#define NO_DEBUG
-
-/* disable print */
-//#define NO_PRINT
-
-/* disable action features */
-//#define NO_ACTION_LAYER
-//#define NO_ACTION_TAPPING
-//#define NO_ACTION_ONESHOT
-
 #define SPLIT_HAND_PIN D2
-#define USE_I2C
-#define POINTING_DEVICE_ROTATION_270
-#define SSD1306OLED
+#define USE_SERIAL
+#define SOFT_SERIAL_PIN D0
+// #define SSD1306OLED
 
-#define SPLIT_POINTING_ENABLE
-#define POINTING_DEVICE_LEFT
+// #define SPLIT_POINTING_ENABLE
+// #define POINTING_DEVICE_RIGHT
 #define TAPPING_TERM 100
 
+#define PMW33XX_CPI 500
+#define PMW33XX_CS_PIN B6
+#define POINTING_DEVICE_INVERT_Y
