@@ -3,8 +3,8 @@ SPLIT_KEYBOARD = yes
 # This file intentionally left blank
 
 # OLED_ENABLE = yes
-# OLED_DRIVER = ssd1306
 # BACKLIGHT_ENABLE = yes
 
 POINTING_DEVICE_ENABLE = yes
 POINTING_DEVICE_DRIVER = pmw3360
+LTO_ENABLE = yes
